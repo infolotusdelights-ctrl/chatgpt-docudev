@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocuDev — Build Better Docs Faster</title>
+    <meta
+      name="description"
+      content="DocuDev helps teams generate, maintain, and ship world-class documentation with AI-assisted workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark">D</span>
+        <span>DocuDev</span>
+      </a>
+      <nav id="menu" class="menu" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open navigation">☰</button>
+      <button class="btn btn-outline">Book Demo</button>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">ADVANCED DOC PLATFORM</p>
+          <h1>Turn messy knowledge into developer-ready docs at scale.</h1>
+          <p>
+            Transform PRs, APIs, and internal notes into polished documentation with AI-assisted
+            writing, review gates, and version-aware publishing.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Start Free</button>
+            <button class="btn btn-ghost">View Product Tour</button>
+          </div>
+          <div class="metrics">
+            <div><strong>98%</strong><span>Faster updates</span></div>
+            <div><strong>2.5x</strong><span>Docs velocity</span></div>
+            <div><strong>700+</strong><span>Engineering teams</span></div>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="card-header">
+            <span class="pill">Live Sync</span>
+            <span class="status">● Healthy</span>
+          </div>
+          <div class="editor-line" style="--w: 92%"></div>
+          <div class="editor-line" style="--w: 78%"></div>
+          <div class="editor-line" style="--w: 86%"></div>
+          <div class="editor-line" style="--w: 54%"></div>
+          <div class="card-footer">
+            <span>AI Suggestions: 14</span>
+            <button class="btn btn-mini">Apply All</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="container section">
+        <div class="section-head">
+          <h2>Everything for advanced documentation teams</h2>
+          <p>From authoring to governance, ship docs like production code.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <h3>AI Knowledge Mapping</h3>
+            <p>Connect repos, tickets, and changelogs to generate contextual docs drafts instantly.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>Quality Gates</h3>
+            <p>Enforce style guides, broken-link checks, and semantic linting before publishing.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>Version Intelligence</h3>
+            <p>Auto-maintain multi-version docs with branch-aware updates and migration callouts.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>Docs Analytics</h3>
+            <p>Measure searches, dead ends, and comprehension to prioritize what to improve.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>Collaboration Threads</h3>
+            <p>Review changes inline with engineers, PMs, and support in one audit trail.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>Headless Delivery</h3>
+            <p>Publish via API, Markdown, or static export to fit your existing ecosystem.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="container section workflow">
+        <div class="section-head">
+          <h2>Simple workflow. Enterprise outcomes.</h2>
+        </div>
+        <ol>
+          <li><span>01</span> Connect repositories and content sources.</li>
+          <li><span>02</span> Generate and review drafts with AI copilots.</li>
+          <li><span>03</span> Validate quality through customizable checks.</li>
+          <li><span>04</span> Publish docs with versioned, searchable delivery.</li>
+        </ol>
+      </section>
+
+      <section id="pricing" class="container section">
+        <div class="section-head">
+          <h2>Transparent pricing for scaling teams</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p class="price">$29<span>/seat</span></p>
+            <ul>
+              <li>Up to 5 projects</li>
+              <li>AI draft generation</li>
+              <li>Email support</li>
+            </ul>
+          </article>
+          <article class="price-card featured reveal">
+            <p class="badge">Most Popular</p>
+            <h3>Growth</h3>
+            <p class="price">$79<span>/seat</span></p>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Custom quality gates</li>
+              <li>Advanced analytics</li>
+            </ul>
+          </article>
+          <article class="price-card reveal">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>SSO/SAML</li>
+              <li>Private model hosting</li>
+              <li>Dedicated success engineer</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="container section faq">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <details class="reveal">
+          <summary>Can we bring our own LLM provider?</summary>
+          <p>Yes. Choose OpenAI, Anthropic, Azure, or self-hosted endpoints for sensitive workloads.</p>
+        </details>
+        <details class="reveal">
+          <summary>Does DocuDev support private deployments?</summary>
+          <p>Absolutely. We offer VPC and on-prem deployment modes for regulated teams.</p>
+        </details>
+        <details class="reveal">
+          <summary>How quickly can we launch?</summary>
+          <p>Most teams onboard within a day and publish first AI-assisted docs within one week.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> DocuDev. Build docs your developers actually trust.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
